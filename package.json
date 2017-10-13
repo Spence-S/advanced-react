@@ -6,14 +6,11 @@
   "scripts": {
     "start": "node lib/server",
     "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
-    "webpack": "webpack -wd"
+    "webpack": "webpack -wd",
+    "test": "jest --watch"
   },
   "babel": {
-    "presets": [
-      "react",
-      "env",
-      "stage-2"
-    ]
+    "presets": ["react", "env", "stage-2"]
   },
   "devDependencies": {
     "eslint": "^4.8.0",
