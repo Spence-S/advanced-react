@@ -8,5 +8,6 @@ module.exports = {
   rules: {
     'import/no-unresolved': [2, { caseSensitive: false }],
     'no-console': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
 };
