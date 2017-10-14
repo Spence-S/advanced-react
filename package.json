@@ -10,11 +10,18 @@
     "test": "jest --watch"
   },
   "babel": {
-    "presets": ["react", "env", "stage-2"]
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.1",
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-class-property": "^1.0.6",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
