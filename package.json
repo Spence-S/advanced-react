@@ -1,13 +1,13 @@
 {
   "name": "advanced-react",
   "version": "1.0.0",
-  "main": "lib/server.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "start": "node lib/server",
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
     "webpack": "webpack -wd",
-    "test": "jest --watch"
+    "test": "jest --watchAll --verbose"
   },
   "babel": {
     "presets": [
@@ -29,6 +29,7 @@
     "react-test-renderer": "^16.0.0"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -43,5 +44,6 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "webpack": "^3.7.1"
-  }
+  },
+  "author": "Spencer Snyder <sasnyde2@gmail.com>"
 }

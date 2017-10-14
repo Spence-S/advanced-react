@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Advanced React JS</title>
   </head>
+  <script>
+    window.initialData = <%- JSON.stringify(initialData) -%>
+  </script>
   <body>
-    <div id="root">
-      ...Loading
-    </div>
-
+    <div id="root"><%- initialMarkup -%></div>
     <script src="bundle.js"></script>
   </body>
 </html>
